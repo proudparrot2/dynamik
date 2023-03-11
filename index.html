@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dynamik</title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="hover.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/gh/proudparrot2/quick.js/quick.js"></script>
+  <script src="https://kit.fontawesome.com/e897e5d5dc.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  
+  <div id="homepage">
+    <div style="display: flex; justify-content: center; align-items: center; width: 100vw">
+      <button class="header active navbutton" data-page="home" id="home">DYNAMIK</button>
+      <button class="navbutton" data-page="gba">GBA</button>
+      <button class="navbutton" data-page="n64">N64</button>
+      <button class="navbutton" data-page="snes9x">SNES</button>
+      <button class="navbutton" data-page="gb">Game Boy</button>
+      <button class="navbutton" data-page="swf">Flash</button>
+    </div>
+    <input type="text" placeholder="Search" id="search"></input>
+    <div id="games"></div>
+    <!--<div class="gamecategory" id="home"><h1>Select a console</h1></div>
+    <div class="gamecategory" id="gba"></div>
+    <div class="gamecategory" id="n64"></div>
+    <div class="gamecategory" id="snes9x"></div>
+    <div class="gamecategory" id="gb"></div>
+    <div class="gamecategory" id="swf"></div>-->
+  </div>
+  
+  <div id="game"></div>
+  <div id="buttons">
+    <button class="button" onclick="window.location.href = '/'"><i class="fa-solid fa-house"></i></button>
+    <button class="button" onclick="help()"><i class="fa-solid fa-circle-question"></i></button>
+    <button class="button" onclick="settings()"><i class="fa-solid fa-gear"></i></button>
+    <button class="button" id="navbuttons" onclick="togglebtns()"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  
+  <script src="games.js"></script>
+  <script src="homepage.js"></script>
+  <script src="loadgame.js"></script>
+  <script src="utilities.js"></script>
+  
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script> 
+  <script src="data/loader.js"></script>
+
+</body>
+
+</html>
