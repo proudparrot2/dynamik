@@ -14,6 +14,13 @@ const games = [
     "file": "roms/gba/supermario3.7z"
   },
   {
+    'id': 'jacksmith',
+    'title': 'Jacksmith',
+    'console': 'Ruffle',
+    'type': 'swf',
+    'file': 'roms/swf/jacksmith.swf'
+  },
+  {
     "id": "megamanx",
     "title": "MegaMan X",
     "console": "Super Nintendo Entertainment System",

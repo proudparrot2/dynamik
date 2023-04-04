@@ -43,7 +43,7 @@ body {
 
 .card:hover {
   box-shadow: 2px 2px 13px #575b5c;
-  transform: scale(1.1);
+  scale: 1.1;
 }
 .card>* {
     flex: 1 1 160px;
@@ -129,7 +129,7 @@ input {
   margin: 10px;
 }
 
-button, .navbutton {
+.navbutton {
   font-size: 22px;
   font-family: "DM Sans";
   background-color: transparent;
@@ -141,7 +141,7 @@ button, .navbutton {
   margin: 0 15px;
 }
 
-button:hover {
+.navbutton:hover {
   scale: 1.05;
   background-color: white;
   color: black;
@@ -164,3 +164,29 @@ button:hover {
 }
 
 .header { font-family: "Tilt Warp"; font-size: 25px; }
+
+.favbubtton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.menubtn {
+  margin-right: 5px;
+  border: none;
+  background-color: inherit;
+  transition: 0.3s all;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.menubtn:hover {
+  scale: 1.03;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
